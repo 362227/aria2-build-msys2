@@ -1,4 +1,5 @@
 ## Ubuntu 编译
+```
 apt install -y libcurl4-openssl-dev libevent-dev \
                 ca-certificates libssl-dev pkg-config \
                 build-essential intltool libgcrypt-dev \
@@ -17,7 +18,7 @@ cd aria2-build-msys2 && bash build-aria2.sh
 
 chmod +x /root/aria2-build-msys2/aria2/src/aria2c
 mv /root/aria2-build-msys2/aria2/src/aria2c /usr/bin/
-
+```
 
 
 
