@@ -112,8 +112,7 @@ rm -rf "c-ares-${cares_ver}"
 
 # libssh2
 [[ ! "$ssh_ver" ]] &&
-    ssh_ver="$(clean_html_index https://libssh2.org/download/)" &&
-    ssh_ver="$(get_last_version "$ssh_ver" tar.gz "1\.\d+\.\d")"
+    ssh_ver="1.9.0"
 ssh_ver="${ssh_ver:-1.9.0}"
 echo "${ssh_ver}"
 wget -c --no-check-certificate "https://libssh2.org/download/libssh2-${ssh_ver}.tar.gz"
