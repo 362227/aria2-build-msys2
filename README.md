@@ -1,3 +1,25 @@
+## Ubuntu 编译
+apt install -y libcurl4-openssl-dev libevent-dev \
+                ca-certificates libssl-dev pkg-config \
+                build-essential intltool libgcrypt-dev \
+                libssl-dev libxml2-dev \
+                libc-ares-dev  libssl-dev libsqlite3-dev \
+                libssh2-1-dev \
+                lzma liblzma-dev libicu-dev zlib1g-dev
+
+sudo apt-get install autopoint
+sudo apt-get install libtool -y
+sudo pip install sphinx
+
+git clone https://github.com/362227/aria2-build-msys2
+cd aria2-build-msys2 && bash build-aria2.sh
+
+chmod +x /root/aria2-build-msys2/aria2/src/aria2c
+mv /root/aria2-build-msys2/aria2/src/aria2c /usr/bin/
+
+
+
+
 ## Readme
 aria2 build scripts for `msys2` with custom patches.
 
