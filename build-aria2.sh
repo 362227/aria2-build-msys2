@@ -162,7 +162,7 @@ autoreconf -fi || autoreconf -fiv
     --with-libexpat \
     --with-libz \
     --with-libgmp \
-    --with-libssh2 \
+    --without-libssh2 \
     --without-libgcrypt \
     --without-libnettle \
     --with-cppunit-prefix=$PREFIX \
