@@ -147,7 +147,7 @@ fi
 git checkout -b patch
 git am -3 ../aria2-*.patch
 
-
+autoreconf -fi || autoreconf -fiv
 ./configure 
 make 
 strip -s src/aria2c.exe
