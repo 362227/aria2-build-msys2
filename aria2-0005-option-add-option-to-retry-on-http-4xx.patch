@@ -116,7 +116,7 @@ index a722d77..de4ad6c 100644
 +      throw DL_RETRY_EX2(fmt(EX_BAD_STATUS, statusCode),
 +                        error_code::HTTP_PROTOCOL_ERROR);
 +    }
-     throw DL_ABORT_EX2(fmt(EX_BAD_STATUS, statusCode),
+     throw DL_RETRY_EX2(fmt(EX_BAD_STATUS, statusCode),
                         error_code::HTTP_PROTOCOL_ERROR);
    }
 diff --git a/src/OptionHandlerFactory.cc b/src/OptionHandlerFactory.cc
