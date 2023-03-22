@@ -8,7 +8,7 @@ apt install -y libcurl4-openssl-dev libevent-dev \
                 libssh2-1-dev \
                 lzma liblzma-dev libicu-dev zlib1g-dev 
 
-sudo apt-get install autopoint
+sudo apt-get install autopoint -y
 sudo apt-get install libtool -y
 sudo pip install sphinx
 
