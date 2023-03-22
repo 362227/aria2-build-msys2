@@ -140,7 +140,7 @@ if [[ -d aria2 ]]; then
     git reset --hard origin || git reset --hard
     git pull
 else
-    git clone https://github.com/aria2/aria2 --depth=1 --config http.sslVerify=false
+    git clone https://github.com/362227/aria2 --depth=1 --config http.sslVerify=false
     cd aria2 || exit 1
 fi
 git checkout -b patch
