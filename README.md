@@ -8,9 +8,7 @@ apt install -y libcurl4-openssl-dev libevent-dev \
                 libssh2-1-dev \
                 lzma liblzma-dev libicu-dev zlib1g-dev 
 
-apt-get install autopoint -y
-apt-get install libtool -y
-pip install sphinx
+apt-get install autopoint -y && apt-get install libtool -y && pip install sphinx
 
 
 git clone https://github.com/362227/aria2-build-msys2
